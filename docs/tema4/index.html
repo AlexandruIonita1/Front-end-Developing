@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program for solving basic arithmetic operations</title>
+</head>
+
+<body>
+    <script>
+        var firstNumber = prompt('Type the first number', '0')
+        var operation = prompt('Type the wanted arithmetic operation')
+        var secondNumber = prompt('Type the second number', '0')
+
+        switch (operation) {
+            case '+':
+                alert('The result is:' + (parseInt(firstNumber) + parseInt(secondNumber)));
+                break
+            case '-':
+                alert('The result is:' + (parseInt(firstNumber) - parseInt(secondNumber)));
+                break
+            case '/':
+                alert('The result is:' + (parseInt(firstNumber) / parseInt(secondNumber)));
+                break
+            case '*':
+                alert('The result is:' + (parseInt(firstNumber) * parseInt(secondNumber)));
+                break
+            default:
+                alert('This operation is not possible!');
+                break
+        }
+    </script>
+</body>
